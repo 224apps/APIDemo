@@ -31,6 +31,7 @@
 		45F287B3296535C20087D545 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287B2296535C20087D545 /* ProfileViewModel.swift */; };
 		45F287B6296535E70087D545 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287B5296535E70087D545 /* SignInView.swift */; };
 		45F287B9296535FE0087D545 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287B8296535FE0087D545 /* SignInViewModel.swift */; };
+		45F287BC29677FE80087D545 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287BB29677FE80087D545 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		45F287B2296535C20087D545 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		45F287B5296535E70087D545 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		45F287B8296535FE0087D545 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		45F287BB29677FE80087D545 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		45F28763296476D10087D545 /* APIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				45F287BA29677FDD0087D545 /* Networking */,
 				45F28778296477500087D545 /* App */,
 				45F28779296477710087D545 /* Views */,
 				45F287772964774A0087D545 /* Builders */,
@@ -304,6 +307,14 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
+		45F287BA29677FDD0087D545 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				45F287BB29677FE80087D545 /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +412,7 @@
 				45F287862964A96D0087D545 /* CapsuleButton.swift in Sources */,
 				45F2877E296477C80087D545 /* KeychainService.swift in Sources */,
 				45F287A7296533F40087D545 /* EpisodeRowView.swift in Sources */,
+				45F287BC29677FE80087D545 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
