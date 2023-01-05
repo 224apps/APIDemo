@@ -32,6 +32,9 @@
 		45F287B6296535E70087D545 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287B5296535E70087D545 /* SignInView.swift */; };
 		45F287B9296535FE0087D545 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287B8296535FE0087D545 /* SignInViewModel.swift */; };
 		45F287BC29677FE80087D545 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287BB29677FE80087D545 /* APIError.swift */; };
+		45F287BF296796970087D545 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287BE296796970087D545 /* APIService.swift */; };
+		45F287C2296797890087D545 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287C1296797890087D545 /* APIClient.swift */; };
+		45F287C429679A490087D545 /* APIPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F287C329679A490087D545 /* APIPreviewClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +64,9 @@
 		45F287B5296535E70087D545 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		45F287B8296535FE0087D545 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		45F287BB29677FE80087D545 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		45F287BE296796970087D545 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		45F287C1296797890087D545 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		45F287C329679A490087D545 /* APIPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPreviewClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		45F28763296476D10087D545 /* APIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				45F287BD296796820087D545 /* Protocol */,
 				45F287BA29677FDD0087D545 /* Networking */,
 				45F28778296477500087D545 /* App */,
 				45F28779296477710087D545 /* Views */,
@@ -311,8 +318,18 @@
 			isa = PBXGroup;
 			children = (
 				45F287BB29677FE80087D545 /* APIError.swift */,
+				45F287C1296797890087D545 /* APIClient.swift */,
+				45F287C329679A490087D545 /* APIPreviewClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		45F287BD296796820087D545 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				45F287BE296796970087D545 /* APIService.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +419,8 @@
 				45F287B9296535FE0087D545 /* SignInViewModel.swift in Sources */,
 				45F2877B296477A30087D545 /* RootView.swift in Sources */,
 				45F2879F29652B540087D545 /* EpisodeRowViewModel.swift in Sources */,
+				45F287C429679A490087D545 /* APIPreviewClient.swift in Sources */,
+				45F287C2296797890087D545 /* APIClient.swift in Sources */,
 				45F2879A2964B5E00087D545 /* EpisodesView.swift in Sources */,
 				45F287B1296535740087D545 /* ProfileView.swift in Sources */,
 				45F2878A2964AB470087D545 /* Episode.swift in Sources */,
@@ -409,6 +428,7 @@
 				45F287B6296535E70087D545 /* SignInView.swift in Sources */,
 				45F287882964AA120087D545 /* VieoDurationFormatter.swift in Sources */,
 				45F287AA296534E10087D545 /* VideoView.swift in Sources */,
+				45F287BF296796970087D545 /* APIService.swift in Sources */,
 				45F287862964A96D0087D545 /* CapsuleButton.swift in Sources */,
 				45F2877E296477C80087D545 /* KeychainService.swift in Sources */,
 				45F287A7296533F40087D545 /* EpisodeRowView.swift in Sources */,

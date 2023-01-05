@@ -47,6 +47,6 @@ struct EpisodesView: View {
 
 struct EpisodesView_Previews: PreviewProvider {
     static var previews: some View {
-        EpisodesView(viewModel: EpisodesViewModel())
+        EpisodesView(viewModel: EpisodesViewModel(apiService: APIPreviewClient()))
     }
 }
